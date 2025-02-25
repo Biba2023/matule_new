@@ -5,7 +5,6 @@ plugins {
 android {
     namespace 'com.example.matule'
     compileSdk 34
-
     defaultConfig {
         applicationId "com.example.matule"
         minSdk 24
@@ -41,6 +40,7 @@ dependencies {
     implementation libs.lifecycle.viewmodel.ktx
     implementation libs.navigation.fragment
     implementation libs.navigation.ui
+    implementation libs.espresso.core
     testImplementation libs.junit
     androidTestImplementation libs.ext.junit
     androidTestImplementation libs.espresso.core

@@ -11,7 +11,11 @@ import static org.junit.Assert.*;
  */
 public class ExampleUnitTest {
     @Test
-    public void addition_isCorrect() {
-        assertEquals(4, 2 + 2);
+    public void emailValidator_CorrectEmailSimple_ReturnsFalse() {
+        assertFalse(MainActivity.isEmailValid(""));
+    }
+    @Test
+    public void emailValidator_CorrectEmailSimple_ReturnsTrue() {
+        assertTrue(MainActivity.isEmailValid("drnaleks@gmail.com"));
     }
 }
