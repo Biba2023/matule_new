@@ -13,14 +13,20 @@
         android:theme="@style/Theme.Matule"
         tools:targetApi="31">
         <activity
-            android:name=".SplashScreen"
+            android:name=".OnBoardSecondActivity"
             android:exported="false" />
         <activity
-            android:name=".Home"
+            android:name=".OnBoardFirstActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HomeScreen"
             android:exported="false"
             android:label="@string/title_activity_home" />
         <activity
-            android:name=".MainActivity"
+            android:name=".SplashScreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
