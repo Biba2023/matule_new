@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailsActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <ImageView
+        android:id="@+id/trainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/img_6"/>
+    <ImageButton
+        android:id="@+id/tr1"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttondetails"
+        android:src="@drawable/img_10"/>
+    <ImageButton
+        android:id="@+id/tr2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttondetails"
+        android:src="@drawable/img_11"/>
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        android:maxLines="3"
+        android:ellipsize="end"
+        android:text="Вставка Max Air 270 обеспечивает непревзойденный комфорт в течение всего дня. Изящный дизайн ...."/>
+<LinearLayout
+    android:layout_width="80dp"
+    android:layout_height="120dp"
+    android:orientation="vertical"
+    android:background="@drawable/button_blue">
+    <ImageButton
+        android:id="@+id/plus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/img_12"/>
+    <TextView
+        android:id="@+id/amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:layout_gravity="center"
+        android:textSize="20sp"/>
+    <ImageButton
+        android:id="@+id/minus"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginTop="25dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/img_13"/>
+
+</LinearLayout>
+</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

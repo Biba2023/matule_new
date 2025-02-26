@@ -17,7 +17,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/accent"
-
             android:layout_marginBottom="20dp"
             android:src="@drawable/bag_2"
             app:tint="@color/white"

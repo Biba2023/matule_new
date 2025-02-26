@@ -5,11 +5,56 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.home.HomeFragment">
-
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
     <SearchView
         android:id="@+id/simpleSearchView"
         android:layout_width="wrap_content"
         android:searchIcon="@drawable/search"
 
         android:layout_height="wrap_content" />
+    <GridLayout
+        android:id="@+id/cards"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+        <include
+            android:id="@+id/card"
+            layout="@layout/product_card"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_margin="10dp"/>
+        <include
+            layout="@layout/product_card"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="10dp"/>
+        <include
+            layout="@layout/product_card"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_margin="10dp"/>
+        <include
+            layout="@layout/product_card"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="10dp"/>
+    </GridLayout>
+</LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
